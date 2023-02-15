@@ -10,9 +10,16 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        // Struct of Landmark is Identifiable compliant, eliminating the need for the id parameter (id: \.id)
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark)
+        NavigationView {
+            // Struct of Landmark is Identifiable compliant, eliminating the need for the id parameter (id: \.id)
+            List(landmarks) { landmark in
+                NavigationLink {
+                    LandmarkDetail()
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Landmarks")
         }
     }
 }
