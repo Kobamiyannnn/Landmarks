@@ -14,7 +14,7 @@ struct LandmarkList: View {
             // Struct of Landmark is Identifiable compliant, eliminating the need for the id parameter (id: \.id)
             List(landmarks) { landmark in
                 NavigationLink {
-                    LandmarkDetail()
+                    LandmarkDetail(landmark: landmark)
                 } label: {
                     LandmarkRow(landmark: landmark)
                 }
