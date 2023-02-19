@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/19
 //  
+//  Abstract:
+//  Size, position, and other information used to draw a badge.
 //
 
 import CoreGraphics

@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/13
 //  
+//  Abstract:
+//  A view that presents a map of a landmark.
 //
 
 import SwiftUI

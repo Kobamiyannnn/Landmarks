@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/12
 //  
+//  Abstract:
+//  The top-level definition of the Landmarks app.
 //
 
 import SwiftUI

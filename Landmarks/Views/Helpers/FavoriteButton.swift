@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/19
 //  
+//  Abstract:
+//  A button that acts as a favorites indicator.
 //
 
 import SwiftUI

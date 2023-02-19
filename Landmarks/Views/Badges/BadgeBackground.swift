@@ -4,7 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/19
 //  
-//
+// Abstract:
+// A view that displays the background of a badge.
 
 import SwiftUI
 

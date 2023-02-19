@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/14
 //  
+//  Abstract:
+//  A representation of a single landmark.
 //
 
 import Foundation

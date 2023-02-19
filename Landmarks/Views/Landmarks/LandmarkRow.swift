@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/15
 //  
+//  Abstract:
+//  A single row to be displayed in a list of landmarks.
 //
 
 import SwiftUI

@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/19
 //  
+//  Abstract:
+//  A view that displays a rotated version of a badge symbol.
 //
 
 import SwiftUI

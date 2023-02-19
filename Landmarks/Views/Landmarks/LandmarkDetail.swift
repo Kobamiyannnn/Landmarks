@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/15
 //  
+//  Abstract:
+//  A view showing the details for a landmark.
 //
 
 import SwiftUI

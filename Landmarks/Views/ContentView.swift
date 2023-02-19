@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/12
 //  
+//  Abstract:
+//  A view showing the list of landmarks.
 //
 
 import SwiftUI
