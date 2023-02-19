@@ -4,8 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/14
 //  
-//   Abstract:
-//   Storage for model data.
+//  Abstract:
+//  Storage for model data.
 //
 
 import Foundation
