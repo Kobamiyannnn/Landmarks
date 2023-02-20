@@ -12,9 +12,14 @@ import SwiftUI
 
 struct PageView<Page: View>: View {
     var pages: [Page]
-    
+    @State private var currentPage = 0
+
     var body: some View {
-        PageViewController(pages: pages)
+        VStack {
+            // Remember to use the $ syntax to create a binding to a value that is stored as state.
+            PageViewController(pages: pages, currentPage: $currentPage)
+            Text("Current Page: \(currentPage)")
+        }
     }
 }
 
