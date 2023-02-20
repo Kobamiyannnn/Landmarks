@@ -17,11 +17,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
                 // Set the edge insets to zero on landmark preview
                 // so the content can extend to the edges of the display.
