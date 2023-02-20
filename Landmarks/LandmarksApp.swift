@@ -21,5 +21,8 @@ struct LandmarksApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        .commands {
+            LandmarkCommands()
+        }
     }
 }
