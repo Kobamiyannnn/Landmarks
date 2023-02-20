@@ -30,9 +30,13 @@ struct Landmark: Hashable, Codable, Identifiable {
     }
     
     private var imageName: String // Read the name of the image from the data.
-    // Loads an image from the asset catalog.
+    // Load an image from the asset catalog.
     var image: Image {
         Image(imageName)
+    }
+    // Return the feature image, if it exists.
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
     }
     
     private var coordinates: Coordinates
