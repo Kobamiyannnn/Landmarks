@@ -14,6 +14,7 @@ struct LandmarkList: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     @State private var filter = FilterCategory.all
+    @State private var selectedLandmark: Landmark?
 
     enum FilterCategory: String, CaseIterable, Identifiable {
         case all = "All"
@@ -35,17 +36,22 @@ struct LandmarkList: View {
         let title = filter == .all ? "Landmarks" : filter.rawValue
         return showFavoritesOnly ? "Favorite \(title)" : title
     }
+
+    var index: Int? {
+        modelData.landmarks.firstIndex(where: { $0.id == selectedLandmark?.id })
+    }
     
     var body: some View {
         NavigationView {
             // Struct of Landmark is Identifiable compliant, eliminating the need for the id parameter (id: \.id)
-            List {
+            List(selection: $selectedLandmark) {
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
                     } label: {
                         LandmarkRow(landmark: landmark)
                     }
+                    .tag(landmark)
                 }
             }
             .navigationTitle(title)
@@ -73,6 +79,7 @@ struct LandmarkList: View {
 
             Text("Select a Landmark")
         }
+        .focusedValue(\.selectedLandmark, $modelData.landmarks[index ?? 0])
     }
 }
 
