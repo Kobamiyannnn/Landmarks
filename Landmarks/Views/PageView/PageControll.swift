@@ -4,6 +4,8 @@
 //  
 //  Created by Kobamiyannnn on 2023/02/20
 //  
+//  Abstract:
+//  A view wrapping a UIPageControl.
 //
 
 import SwiftUI
